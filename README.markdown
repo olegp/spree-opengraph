@@ -7,12 +7,12 @@ This is an extension that adds Facebook Open Graph support to Spree product page
 
 You'll also need to modify your spree_application.html.erb to include the following opening tag attributes:
 
-  <html xmlns="http://www.w3.org/1999/xhtml" 
+      <html xmlns="http://www.w3.org/1999/xhtml" 
         xmlns:og="http://opengraphprotocol.org/schema/"
         xmlns:fb="http://www.facebook.com/2008/fbml">
 
 
-## Actual state
+## Status
 Work in progress, but please do give it a go.
 
 
