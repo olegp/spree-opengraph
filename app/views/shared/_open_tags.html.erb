@@ -1,0 +1,9 @@
+<% if controller.controller_name == 'products' and controller.action_name == 'show' %>
+<meta property="og:title" content="<%= @product.name %>"/>
+<meta property="og:type" content="product"/>
+<meta property="og:url" content="<%= request.url %>"/>
+<meta property="og:image" content="<%= "http://" + request.env["HTTP_HOST"] + @product.images.first.attachment.url(:product) %>"/>
+<meta property="fb:admins" content="USER_ID"/>
+<meta property="og:site_name" content="<%=  Spree::Config[:site_name] %>"/>
+<meta property="og:description" content="<%=h @product.description.gsub(/<\/?[^>]*>/, "") %>"/>
+<% end %>
